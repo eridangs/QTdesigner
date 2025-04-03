@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'verificacao.ui'
+# Form implementation generated from reading ui file 'par_impar.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -17,17 +17,25 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.label_idade = QtWidgets.QLabel(self.centralwidget)
-        self.label_idade.setGeometry(QtCore.QRect(50, 130, 131, 61))
-        self.label_idade.setObjectName("label_idade")
-        self.pushButton_verificar = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_verificar.setGeometry(QtCore.QRect(230, 200, 93, 28))
-        self.pushButton_verificar.setObjectName("pushButton_verificar")
-        self.lineEdit_idade = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_idade.setGeometry(QtCore.QRect(210, 141, 161, 31))
-        self.lineEdit_idade.setObjectName("lineEdit_idade")
+        self.label_titulo = QtWidgets.QLabel(self.centralwidget)
+        self.label_titulo.setGeometry(QtCore.QRect(280, 10, 271, 51))
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_titulo.setFont(font)
+        self.label_titulo.setObjectName("label_titulo")
+        self.label_num = QtWidgets.QLabel(self.centralwidget)
+        self.label_num.setGeometry(QtCore.QRect(70, 120, 151, 41))
+        self.label_num.setObjectName("label_num")
+        self.lineEdit_num = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_num.setGeometry(QtCore.QRect(210, 120, 141, 31))
+        self.lineEdit_num.setObjectName("lineEdit_num")
+        self.pushButton_enviar = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_enviar.setGeometry(QtCore.QRect(420, 120, 93, 28))
+        self.pushButton_enviar.setObjectName("pushButton_enviar")
         self.label_resposta = QtWidgets.QLabel(self.centralwidget)
-        self.label_resposta.setGeometry(QtCore.QRect(200, 270, 181, 51))
+        self.label_resposta.setGeometry(QtCore.QRect(220, 220, 191, 81))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
@@ -50,5 +58,6 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_idade.setText(_translate("MainWindow", "DIGITE SUA IDADE:"))
-        self.pushButton_verificar.setText(_translate("MainWindow", "VERIFICAR"))
+        self.label_titulo.setText(_translate("MainWindow", "Par ou Impar"))
+        self.label_num.setText(_translate("MainWindow", "DIGITE UM NÚMERO:"))
+        self.pushButton_enviar.setText(_translate("MainWindow", "DESCUBRA"))

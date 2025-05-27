@@ -13,8 +13,12 @@ class main(QMainWindow):
 
         self.player = QMediaPlayer(self)
 
-        self.ui.pushButton.clicked.connect(self.reprodutormusical)
-        self.ui.pushButton_2.clicked.connect(self.parar)
+        self.ui.pushButton_play.clicked.connect(self.reprodutormusical)
+        self.ui.pushButton_stop_1.clicked.connect(self.parar)
+        self.ui.pushButton_play_2.clicked.connect(self.reprodutormusical2)
+        self.ui.pushButton_stop_2.clicked.connect(self.parar)
+        self.ui.pushButton_play_3.clicked.connect(self.reprodutormusical3)
+        self.ui.pushButton_stop_3.clicked.connect(self.parar)
 
     def parar(self):
         self.player.stop()
@@ -23,7 +27,6 @@ class main(QMainWindow):
     def reprodutormusical (self):
         caminho_music = os.path.abspath("Kiss.mp3")
         print("Local da música: ",caminho_music)
-
         url = QUrl.fromLocalFile(caminho_music)
         if url.isValid():
             self.player.setMedia(QMediaContent(url))
@@ -31,7 +34,28 @@ class main(QMainWindow):
             print("Tocando música...")
         else:
             print("Erro: Caminho do arquivo inválido.")
-    
+
+    def reprodutormusical2 (self):
+        caminho_music = os.path.abspath("Epic.mp3")
+        print("Local da música: ",caminho_music)
+        url = QUrl.fromLocalFile(caminho_music)
+        if url.isValid():
+            self.player.setMedia(QMediaContent(url))
+            self.player.play()
+            print("Tocando música...")
+        else:
+            print("Erro: Caminho do arquivo inválido.")
+
+    def reprodutormusical3 (self):
+        caminho_music = os.path.abspath("Djonga.mp3")
+        print("Local da música: ",caminho_music)
+        url = QUrl.fromLocalFile(caminho_music)
+        if url.isValid():
+            self.player.setMedia(QMediaContent(url))
+            self.player.play()
+            print("Tocando música...")
+        else:
+            print("Erro: Caminho do arquivo inválido.")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

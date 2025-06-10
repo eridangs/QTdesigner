@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_sonic">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>110</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #0000ff;
+color: white;
+font-size: 16px;
+border-radius: 25px;
+}</string>
+    </property>
+    <property name="text">
+     <string>SONIC</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>351</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Onyx</family>
+      <pointsize>30</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffc517;</string>
+    </property>
+    <property name="text">
+     <string>Escolha seu Personagem:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_knuckles">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>180</y>
+      <width>110</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #aa0000;
+color: white;
+font-size: 16px;
+border-radius: 25px;
+}</string>
+    </property>
+    <property name="text">
+     <string>KNUCKLES</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tails">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>270</y>
+      <width>110</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #ffcc11;
+color: white;
+font-size: 16px;
+border-radius: 25px;
+}</string>
+    </property>
+    <property name="text">
+     <string>TAILS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_amy">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>110</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #ff00ff;
+color: white;
+font-size: 16px;
+border-radius: 25px;
+}</string>
+    </property>
+    <property name="text">
+     <string>AMY</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_play">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>470</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #00aaff;
+color: white;
+font-size: 16px;
+border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>PLAY</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_shadow">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>290</y>
+      <width>110</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #000000;
+color: white;
+font-size: 16px;
+border-radius: 25px;
+}</string>
+    </property>
+    <property name="text">
+     <string>SHADOW</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_dr_eggman">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>380</y>
+      <width>110</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #4CAF50;
+color: white;
+font-size: 16px;
+border-radius: 25px;
+}</string>
+    </property>
+    <property name="text">
+     <string>DR. EGGMAN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_fundo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>781</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fundo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_PersonagemSelecionado">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>170</y>
+      <width>261</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>img_fundo</zorder>
+   <zorder>pushButton_sonic</zorder>
+   <zorder>title</zorder>
+   <zorder>pushButton_knuckles</zorder>
+   <zorder>pushButton_tails</zorder>
+   <zorder>pushButton_amy</zorder>
+   <zorder>pushButton_play</zorder>
+   <zorder>pushButton_shadow</zorder>
+   <zorder>pushButton_dr_eggman</zorder>
+   <zorder>label_PersonagemSelecionado</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

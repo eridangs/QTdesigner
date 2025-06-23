@@ -1,0 +1,3 @@
+Nome: L
+E-mail: l@gmail.com
+Idade: 18

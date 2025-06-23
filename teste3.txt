@@ -1,0 +1,6 @@
+Nome Completo: L
+Nome de Usuário: g1
+E-mail: G
+Senha: 123
+Idade: 18
+Personagem: Pooh

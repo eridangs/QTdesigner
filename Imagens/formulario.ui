@@ -100,7 +100,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lineEditNome">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -110,7 +110,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="lineEditIdade">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -120,7 +120,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="lineEditEmail">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -130,20 +130,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButtonLimpa">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>540</y>
-      <width>121</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Limpar Formulario</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButtonSalva">
+   <widget class="QPushButton" name="pushButtonSalvar">
     <property name="geometry">
      <rect>
       <x>400</x>
